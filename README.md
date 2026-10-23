@@ -17,7 +17,6 @@ Live demo: https://123pawarishwari.github.io/PrepPilot-Web-AI-Interview-Preparat
 ## Important
 Scoring is a **rule-based demo engine** (keyword coverage, length, structure). It is not an AI model and the app labels it that way.
 
-## Add screenshots
-Save images in a `screenshots/` folder and link them here.
+
 
 MIT License
