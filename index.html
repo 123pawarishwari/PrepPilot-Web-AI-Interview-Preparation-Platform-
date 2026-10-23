@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PrepPilot AI – Interview Practice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">P</span>PrepPilot AI</div>
+  <nav>
+    <button data-view="home" class="active">Home</button>
+    <button data-view="dashboard">Dashboard</button>
+    <button data-view="interview">Mock Interview</button>
+    <button data-view="bank">Question Bank</button>
+    <button data-view="evaluator">Answer Evaluator</button>
+  </nav>
+  <div class="tools"><button id="kbtn" class="ico">Ctrl K</button><button id="theme" class="ico" aria-label="Toggle light or dark theme">◐</button></div>
+</header>
+<main>
+<section id="home" class="view">
+  <div class="intro">
+    <h1 class="big">Practice smarter.<br>Interview better.<br><mark>Get hired.</mark></h1>
+    <p class="lead">Pin your favorite questions, rehearse your answers, and watch your confidence grow, one board at a time.</p>
+    <p class="lbl">Tip: press Ctrl K to jump anywhere.</p>
+    <div class="actions center-a"><button class="btn red" data-nav="interview">Start Practicing</button><button class="btn ghost" data-nav="#board">Explore Features</button></div>
+  </div>
+  <div id="board" class="board">
+    <div class="pin white demo">
+      <p class="lbl">Try it: answer this question</p>
+      <b>What is the difference between a list and a tuple in Python?</b>
+      <svg viewBox="0 0 200 120" class="gauge" role="img" aria-label="Score gauge"><path d="M20 100 A80 80 0 0 1 180 100" class="g-bg"/><path id="arc" d="M20 100 A80 80 0 0 1 180 100" class="g-fg"/><text id="gv" x="100" y="92" text-anchor="middle" class="g-val">0</text><text x="100" y="112" text-anchor="middle" class="g-sub">out of 100</text></svg>
+      <p id="gc" class="lbl center">Type to see your score</p>
+      <textarea id="hd" placeholder="Write a short answer…"></textarea>
+      <p class="lbl">Demo scoring: rule-based, not AI.</p>
+    </div>
+    <div class="pin blush"><span class="em">🎤</span><h3>Mock interviews</h3><p>Pick Python, JavaScript, SQL, HR or Behavioral. Answer one question at a time and get a scored report.</p></div>
+    <div class="pin lilac tall"><span class="em">🗺️</span><h3>How a session flows</h3><p><b>Check in.</b> Choose your type, difficulty and number of questions.</p><p><b>Climb.</b> Answer in your own words. Go back and edit before you submit.</p><p><b>Land.</b> Read your report, study the sample answers, and try again tomorrow.</p></div>
+    <div class="pin mint"><span class="em">🧠</span><h3>Answer evaluator</h3><p>Paste an answer and see which key concepts you covered and which you missed.</p></div>
+    <div class="pin butter"><span class="em">📌</span><h3>Question bank</h3><p>Search, filter, read model answers, save favorites and tick off what you have mastered.</p></div>
+    <div class="pin sky"><p class="q">“The missing-concepts list showed me I never mentioned scope in my closure answer.”</p><p class="lbl">Sample learner, Python (sample content)</p></div>
+    <div class="pin peach"><span class="em">📈</span><h3>Progress dashboard</h3><p>Average score, streak and a trend chart, saved privately in your browser.</p></div>
+    <div class="pin white"><p class="q">“Short daily rounds beat one long weekend cram.”</p><p class="lbl">Sample learner, SQL (sample content)</p></div>
+  </div>
+</section>
+<section id="dashboard" class="view hidden"></section>
+<section id="interview" class="view hidden"></section>
+<section id="bank" class="view hidden"></section>
+<section id="evaluator" class="view hidden"></section>
+</main>
+<footer class="foot">PrepPilot AI · your progress stays in this browser · <button id="reset" class="link">Reset my data</button></footer>
+<div id="cmd" class="cmd hidden"><div class="cmdbox"><input id="cmdin" placeholder="Type a command…" aria-label="Command"><ul id="cmdlist"></ul></div></div>
+<div id="toast" class="toast"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
